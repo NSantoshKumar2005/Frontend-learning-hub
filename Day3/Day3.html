@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <!--
     forms
@@ -36,8 +38,26 @@
     In buttons we have the type attribute
     type-submit,reset
 
-    -->
+    4)required
 
+    5)id and for
+    It is used to link the lable with the input
+
+    6)value
+    It is used  to provide predefined value to the input field.
+
+    7)name
+    It will acts as a key for the input field and carries the data.
+
+    8)min and max
+
+    9)action
+    It defines where the form should be submitted
+
+    10)method
+    get - 
+    post - more secured
+    
     <form>
         <label>enter username</label>
         <input type="text" placeholder="enter name">
@@ -51,6 +71,42 @@
         <input type="datetime-local">
         <button type="submit">submit</button>
         <button type="reset">reset</button>
+
+        <label for="name">Enter Username</label>
+        <input id="name" type="text" placeholder="name" value="John" name="Username" required> <br>
+    </form>
+    -->
+    <form action="" method="get">
+        <label>select your stack</label><br>
+        <input id="python" type="radio" name="stack" value="pythonstack">
+        <label for="python">python</label>
+
+        <input id="Java" type="radio" name="stack" value="javastack">
+        <label for="Java">Java</label>
+        <br>
+
+        <label>select your skills</label><br>
+
+        <label for="html">html</label>
+        <input id="html" type="checkbox" name="skillset" value="html">
+
+        <label for="css">css</label>
+        <input id="css" type="checkbox" name="skillset" value="css"><br>
+        <label>select your education</label>
+
+        <select name="education">
+            <option value="intermediate">intermediate</option>
+            <option value="bachelor">bachelor</option>
+            <option value="master">master</option>
+        </select>
+
+        <textarea></textarea>
+
+        <input type="number" name="enter number" min="5" max="10">
+
+        <button type="submit">submit</button>
+
     </form>
 </body>
+
 </html>
