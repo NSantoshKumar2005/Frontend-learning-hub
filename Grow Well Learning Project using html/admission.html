@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grow Well Learning - Admissions</title>
+</head>
+<body>
+    <header>
+        <!-- Same Top Menu Bar -->
+        <h1>Welcome to Grow Well Learning</h1>
+        <nav>
+            <a href="index.html" target="_self">Home |</a>
+            <a href="courses.html" target="_self">Courses |</a>
+            <a href="admission.html" target="_self">Admission</a>
+            <hr>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <form action="" method="post">
+            <!-- Text Input -->
+            <label for="name">Enter your full name</label>
+            <input id="name" type="text" placeholder="Enter your name" name="name" required> <br>
+            
+            <!-- Number Input with Rules -->
+            <label for="age">Your Age</label>
+            <input id="age" type="number" placeholder="Enter your age" min="5" max="18" name="name" required > <br>
+            
+            <!-- Dropdown Menu -->
+            <label for="favourite">Pick a favourite subject</label>
+            <select name="subject" id="favourite">
+                <option value="HTML and Coding">HTML and Coding</option>
+                <option value="science">Space Science</option>
+                <option value="Digital art">Digital art</option>
+            </select> <br>
+
+            <!-- Radio Buttons -->
+            <p>Do you have the coding experience</p>
+            <label for="experiences">Yes</label>
+            <input id="experiences" type="radio" name="name" value="Yes" required>
+            <label for="experience">No</label>
+            <input id="experience" type="radio" name="name" value="No" required>
+            <br>
+
+            <!-- Textarea for Longer Messages -->
+            <label for="fact">Tell us one fact about you</label>
+            <textarea id="fact" rows="3" cols="30"></textarea>
+            <br>
+
+            <!-- Submit & reset Buttons -->
+            <button type="submit">submit</button>
+            <button type="reset">reset</button>
+        </form>
+    </main>
+    <hr>
+
+    <!-- Same Bottom Footer -->
+    <footer>
+        <hr>
+        <p><strong>© Grow Well Learning.All rights reserved</strong>
+        <p>
+    </footer>
+
+</body>
+</html>
