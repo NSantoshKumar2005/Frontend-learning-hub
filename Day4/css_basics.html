@@ -1,0 +1,573 @@
+<!-- 
+CSS - Cascading styling sheets
+
+Css uses:
+used to design html tags elements
+widely used language in the web development
+saves a lot of time.
+
+CSS syntax:
+h1{
+    color:yellow;font-size:12px;
+}
+
+key features:
+1)separation of contents and presentation
+2)selectors 
+
+CSS Syntax:
+
+h1{
+    color:orange;font-size:12px;
+    
+}
+
+h1 - selector
+color,font-size - property or key
+orange,12px - value
+
+Ex:
+p{
+    color:red;
+    text-align:center;
+}
+
+Program:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        p{
+            color:red;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <p>hello world</p>
+</body>
+</html>
+
+comments:
+
+
+syntax:
+
+
+/* This is paragraph tag */
+/* I'm from python life */
+
+Uses:
+1)Readability
+2)Time saving
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        /* this is a style tag */
+    </style>
+</head>
+<body>
+    <p>Hello World</p>
+</body>
+</html>
+
+
+CSS Selectors:
+
+5 categories:
+
+1)simple selector : name,Id,Class
+
+2)combination selector : specific relation b/w them.
+
+3)pseudo selector : selects and style a part of element.
+
+4)pseudo elements selector : select elements based on a certain state.
+
+5)Attribute selector : selects based on attribute value
+
+
+1)The Css Element Selector
+2)CSS Id selector
+3)CSS class selector
+4)css universal selector
+5)css grouping selector
+
+-->
+<!--
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        /* Element selector 
+        p{
+            color:green;
+            font-size:20px;
+            text-align: center;
+            background-color: aqua;
+        } 
+        h1{
+            background-color: brown;
+        }
+        */
+
+        /* Id selector 
+         #idselector{
+            background-color: aquamarine;
+            text-align: center;
+            color:red;
+            font-size:12px;
+         }*/
+
+        /* class selector 
+        .center {
+            text-align:left;
+            color:green;
+        } 
+        */
+
+        /* Universal selector - All over 
+        *{
+            color:green;
+            text-align:center;
+        }
+        */
+
+        /* CSS Grouping selector - more than one */
+        h1,
+        h2 {
+            color: orange;
+            font-size: 15px;
+            text-align: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="center">zudio</h1>
+    <p>zudio clothes are good in quality.</p>
+    <p id="idselector">Hello everyone</p>
+    <h2 class="center">Namaskaram</h1>
+        <p>Thankyou</p>
+
+</body>
+
+</html>
+
+-->
+<!--
+How to add css:
+
+Three ways to insert css.
+
+1)External css:
+
+Points to rememeber:
+
+->link should be there in head in html file.
+->Each individual file should be there for html and css.
+
+syntax for link:
+<link>rel="stylesheet" href="mycss.css"</link>
+
+Program:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <h1>Hello</h1>
+    <p>world</p>
+</body>
+</html>
+
+2)Internal Css:
+
+Points to remember:
+->By using style tag we used to access the css.
+
+Program:
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        h1 {
+            color: navy;
+        }
+
+        body {
+            background-color: beige;
+        }
+        p{
+            color:palevioletred;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>python life</h1>
+    <p>Your friend</p>
+</body>
+
+</html>
+
+3)Inline css - for unique style
+
+Program:
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css inline</title>
+</head>
+
+<body>
+    <h1 style="color:black;background-color: aqua;">Welcome to inline css</h1>
+    <p style="color:green;font-size:15px;">Thankyou</p>
+</body>
+
+</html> 
+-->
+
+<!-- 
+CSS colors
+1)css background color:
+
+Program:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>hi</title>
+</head>
+<body>
+    <h1 style="background-color: rgb(50,10,79);">this is color value</h1>
+    <h2>Thanks for watching</h2>
+    <p style="background-color: magenta;">Telegram</p>
+</body>
+</html>
+
+2)css text color :
+program:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        h1{
+            color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <h1>This background color in css used for styling the bg</h1>
+    <p>comment css</p>
+</body>
+</html>
+
+3)css border color :
+1)Dotted -> .....
+
+2)dashed -> --------
+
+3)solid -> _______________________
+
+4)double -> _________________________
+            ________________________
+
+            
+5)None ->
+
+6)hidden
+
+Program:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        p.dashed{
+            border-style: dashed;
+        }
+        p.double{
+            border-style:double;
+        }
+        p.solid{
+            border-style: solid;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>css borders</h1>
+    <p class="dashed">movie</p>
+    <p class="double">scene</p>
+    <p class="solid">bahubali</p>
+</body>
+</html>
+
+(or)
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>fruits</title>
+</head>
+<body>
+    <h1 style="border: 10px solid green;">grapes</h1>
+    <p style="border: 2px solid blue;">mangoes</p>
+</body>
+</html>
+
+4)css color values.
+
+Predefined colors:
+-------------------
+HEX
+RGB
+HSL
+RGBA
+
+colors:
+--------
+Tomato
+orange
+sea blue
+dodger blue
+light gray
+pink
+
+margins :
+----------
+->css margin property is used to define the space around the element.
+
+1)margin top :
+2)margin left :
+3)margin bottom :
+4)margin right :
+
+-------------------------------------------------------------------------------------------------
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2 {
+            color: green;
+            background: pink;
+            width: 20%;
+            height: 200px;
+            padding: 20px 10px 30px 40px;
+            border: 2px solid lightgreen;
+            border-radius: 20px;
+            margin: 30px 10px 20px 10px;
+            display: inline-block;
+            /* display:inline-block; --- it will behave like a inline but
+    takes properties like block level.*/
+            background-image: url("https://img.magnific.com/premium-vector/glitter-pink-leafy-frame_53876-116089.jpg?semt=ais_hybrid&w=740&q=80");
+            background-repeat: no repeat;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+        }
+
+        .s1 {
+            color: yellow;
+            background-color: black;
+            text-align: left;
+            width: 20%;
+            height: 10%;
+            padding: 10px 20px;
+            border: 5px outset green;
+            border-radius: 50px;
+            margin: 20px 10px 30px 10px;
+            display: inline-block;
+        }
+
+        #gd {
+            color: aquamarine;
+            background: darkgreen;
+            text-align: center;
+        }
+    </style>
+    <link rel="stylesheet" href="demo.css">
+</head>
+
+<body>
+    <!--     css - cascading style sheets
+
+    it is a style sheet language that is used to describe the presentation of html document.
+    css styles deals colors,fonts,animations,layouts and responsiveness
+
+    how to insert css:
+    1)inline css :
+    It is added to the tag with the help of style attribute.
+    css styles comes with property and values.
+
+    css syntax:
+    ------------
+    color:red;
+    declaration
+
+    inserting css syntax:
+    <h1 style="color:red;background:blue;">primary heading</h1>
+
+    2)internal css
+    styles are defined in head section with the style tag.
+
+    css syntax:
+    ------------
+    selector : it is used to target the html tags for applying styles.
+
+    selector{
+        declaration
+            }
+    h2{
+        color:yellow
+      }
+
+    3)external css:
+    external styles are defined in external file that has extension of .css.
+    external file can be linked using link tag in head section.
+
+    <link rel="stylesheet" href="demo.css">
+
+    priority:
+    1)inline
+    2)internal or external - it depends how we define
+
+    <h1 style="color:red;background:blue;">inline heading</h1>
+    
+    <h2>internal heading</h2>
+    <h3>external heading</h3>
+
+    types of selectors:
+    1)simple selectors:
+        1)tag name or element selector
+        h1{
+            color:red;
+        }
+
+        2)class selector:
+        it is denoted with .classname.
+        it is used to style multiple tags.
+        we can assign multiple classnames in class attribute.
+
+        <div class="s1 a1">
+            .s1{
+                color:blue;
+            }
+
+    specificity:
+    1)id having high specificity
+    2)class
+    3)tag
+
+    syntax for specificity:
+    #title1{
+            color:violet;
+            background-color:green;
+            text-align:center;
+    }
+    .t1{
+            color:brown;
+            background-color:yellow;
+            text-align:left;
+
+    }
+    h1{
+            color:red;
+            background-color:black;
+            text-align:right;
+    }
+
+
+    2)combinators selectors
+    3)Pseudo-class selectors
+    4)Pseudo-elements selectors
+    5)Attribute selectors:
+
+    box model:
+    it describes the presentation of an element.
+    it contains four components
+
+    1)content
+    width
+    height
+    
+    width:50%;
+    height:200px;
+
+    2)padding : It is the space around the content
+
+    padding:20px;
+    padding:10px 20px 30px 40px;
+            top right bottom left
+    padding:10px 20px      30px;
+            top right/left bottom
+    padding:10         20px
+            top/bottom left/right
+
+    3)border
+    it is line around the padding
+    border:1px solid green;
+    style--solid
+           dotted
+           dashed
+           double
+           inset
+           outset
+           ridge
+           groove
+           none
+    border-radius:20px;
+
+    4)margin
+    it is space around the element or between the elements.
+
+    margin:20px 10px 20px;
+    margin:20px 10px 30px 40px;
+    
+    Point to remember:
+
+    display:inline-block;
+    /* display:inline-block; --- it will behave like a inline but takes properties like block level.
+
+    we can create cards too.
+
+    PROPERTIES TO REMEMBER:
+
+    background-image:url("https://img.magnific.com/premium-vector/glitter-pink-leafy-frame_53876-116089.jpg?semt=ais_hybrid&w=740&q=80");
+    background-repeat:no repeat;
+    background-size:100% 100%;
+    background-attachment: fixed;
+    -->
+
+    <h1 style="color:red;background:yellow;">primary heading</h1>
+    <h2 style="color:violet; text-align:left;">sub heading</h2>
+    <h3 class="s1">class selector</h3>
+    <h2 style="color:violet; text-align:left;">sub heading</h2>
+    <h3 class="s1">class selector</h3>
+    <h2 style="color:violet; text-align:left;">sub heading</h2>
+    <h3 class="s1">class selector</h3>
+    <h2 style="color:violet; text-align:left;">sub heading</h2>
+    <h3 class="s1">class selector</h3>
+    <h4 id="gd">id selector</h4>
+    <div> block level <span> inline element </span> element </div>
+</body>
+
+</html>
