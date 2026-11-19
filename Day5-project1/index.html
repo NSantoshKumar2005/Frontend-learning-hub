@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        /*css
+        how to insert css
+        selector
+        types of selectors
+        box model
+        inline,block,inline-block
+        background properties
+
+        combinators
+        it is used to target the html element based on a relationship
+        header>a--child selector
+
+        header+h1 -- sibling selector
+
+        universal selector
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        
+        font properties:
+        =================
+        font-size: 1.2 rem;
+        font-family: 'cursive' 'arial';
+        font-weight: 900; (200 - Low  900 - high(mostly people use this)
+
+        */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: green;
+            text-align: center;
+            padding: 15px 15px 15px 15px;
+            border: 1px solid black;
+        }
+
+        header>a {
+            color: brown;
+            background-color: yellowgreen;
+            padding: 3px 3px;
+            border-radius: 5px;
+            margin: 10px 10px 10px 10px;
+        }
+
+        .s1 {
+            height: 500px;
+            color: white;
+            text-align: center;
+
+            padding: 250px 50px 430px 50px;
+            border: 1px solid green;
+            background-size: 100% 100%;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/photos.jpg");
+            background-repeat: no-repeat;
+        }
+
+        .s2{    
+            text-align:center;
+            height: 500px;
+            padding: 200px 20px;
+            margin: 10px 10px 10px 10px;
+           
+        }
+
+        .s3{
+            height: 300px;
+            text-align:center;
+        }
+
+        .s4{
+            height: 300px;
+            text-align:center;
+            font-size: 2rem;
+        }
+
+        .card{
+            display:inline-block;
+            width:300px;
+            background:rgb(62,228,228);
+            padding: 10px;
+            border:2px solid green;
+            margin:10px;
+            border-radius:10px;
+        }
+
+        .container>div{
+            width:200px;
+            padding:20px;
+            margin: 10px;
+            display:inline-block;
+        }
+
+        footer{
+            background:darkblue;
+            padding:40px 20px;
+            text-align:center;
+            color:white;
+            font-weight: 900;
+            font-size:1rem;
+        }
+
+    </style>
+
+
+
+
+<body>
+
+    <header>
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Services</a>
+        <a href="">Contact</a>
+    </header>
+
+    <section class="s1">
+        <h1>Learn css through Projects</h1>
+        <p>This project demonstrates css colors, Backgrounds, Inline & Inline-Block, Box Model, and Fonts in one modern
+            UI</p>
+    </section>
+
+    <section class="s2">
+        <h1>css colors</h1>
+        <div class="container">
+            <div style="background: red;">Red</div>
+            <div style="background: blue;">RGB</div>
+            <div style="background: green;">HEX</div>
+            <div style="background: pink;">HSL</div>
+        </div>
+    </section>
+
+    <section class="s3">
+        <h1>CSS Box Model</h1>
+        <div class="card">
+            <h1>Card One</h1>
+            <p>This card demonstrates padding,border, margin, width, and background color</p>
+        </div>
+
+        <div class="card">
+            <h1>Card One</h1>
+            <p>This card demonstrates padding, border, margin, width, and background color.</p>
+        </div>
+    </section>
+    
+    <section class="s4">
+        <h1>CSS Fonts</h1>
+        <div style="font-weight:300;">Light Font weight - 300</div>
+        <div style="font-weight:400;">Normal Font weight - 400</div>
+        <div style="font-weight:700;">Bold Font Weight - 700</div>
+        <div>
+            This paragraph demonstrates line-height, letter-spacing, font-size, and font-family properties in CSS.
+        </div>
+    </section>
+
+    <footer>CSS Learning Project Template</footer>
+</body>
+
+</html>
